@@ -1,0 +1,15 @@
+{
+  "scriptFile" : "../greeting-az-func-0.0.1-SNAPSHOT.jar",
+  "entryPoint" : "com.example.function.HelloHandler.execute",
+  "bindings" : [ {
+    "type" : "httpTrigger",
+    "direction" : "in",
+    "name" : "request",
+    "methods" : [ "GET", "POST" ],
+    "authLevel" : "ANONYMOUS"
+  }, {
+    "type" : "http",
+    "direction" : "out",
+    "name" : "$return"
+  } ]
+}
