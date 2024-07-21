@@ -6,7 +6,23 @@ Create an azure function and storage account.
 
 then add storage account connection string in azure function.  
 
-Update the **pom.xml** and **local.settings.json** files with info accordingly.
+Update the **pom.xml** file with info accordingly.
+
+create a new file **local.settings.json** in resources folder.  
+
+add these in that and update storage account connection setting as well.  
+
+```
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "",
+    "FUNCTIONS_WORKER_RUNTIME": "java",
+    "FUNCTIONS_EXTENSION_VERSION": "~4",
+    "JAVA_HOME": "C:\\Program Files\\Java\\jdk-21"
+  }
+}
+```
 
 Use these commands in project directory in cmd.  
 
